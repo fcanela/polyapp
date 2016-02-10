@@ -1,0 +1,36 @@
+{
+  "name": "polyapp",
+  "version": "0.1.0",
+  "description": "Handle Express server logic to run multiple applications",
+  "main": "polyapp.js",
+  "scripts": {
+    "start": "node_modules/.bin/mocha --watch test/*",
+    "test": "node_modules/.bin/mocha test/*",
+    "lint": "node_modules/.bin/eslint -c .eslint lib/*",
+    "health": "npm run test ; npm run lint",
+    "docs": "node_modules/.bin/jsdoc2md --src lib/* > doc/api.md"
+  },
+  "keywords": [
+    "express",
+    "modules",
+    "microservices"
+  ],
+  "author": "Francisco Canela <fcanela.dev+npm@gmail.com> (http://www.fcanela.com)",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "eslint": "^1.10.3",
+    "jsdoc-to-markdown": "^1.3.3",
+    "mocha": "^2.4.5",
+    "should": "^8.2.1",
+    "supertest": "^1.1.0"
+  },
+  "repository": "fcanela/polyapp",
+  "homepage": "https://github.com/fcanela/polyapp",
+  "bugs": {
+    "url": "https://github.com/fcanela/polyapp/issues"
+  }
+}
