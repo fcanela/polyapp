@@ -34,7 +34,9 @@
 
 ## <a name="how-it-works"></a> How it works
 
-<div style="text-align: center"><img src="https://dl.dropboxusercontent.com/u/44078494/projects/polyapp/github/poly.svg" /></div>
+<p align="center">
+    <img src="https://dl.dropboxusercontent.com/u/44078494/projects/polyapp/github/poly.svg" alt="Poly explained diagram"/>
+</p>
 
 There are two elements: 
 
