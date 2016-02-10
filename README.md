@@ -34,7 +34,23 @@
 
 ## <a name="how-it-works"></a> How it works
 
-There are two elements: **PolyApp** (this package) and **PolyApp modules** (packages which simply exposes a [Express router](http://expressjs.com/en/4x/api.html#router)).
+<div style="text-align: center"><img src="https://dl.dropboxusercontent.com/u/44078494/projects/polyapp/github/poly.svg" /></div>
+
+There are two elements: 
+
+* **PolyApp** (this package) which runs a instance of Express framework.
+* **PolyApp modules** which simply exposes a [Express router](http://expressjs.com/en/4x/api.html#router)).
+
+You can create a container to deploy as many (or less) modules as you want simply following the next steps:
+
+1. Install PolyApp (using npm) and your modules (with using npm, git submodules, placing them on a folder or whatever you prefer)
+2. Require PolyApp and your modules
+3. Create a instance of PolyApp
+4. Include your modules in PolyApp
+5. Start the PolyApp server
+
+Done! You can see steps 2 to 5 in next section.
+
 
 ## <a name="usage"></a> Usage
 
