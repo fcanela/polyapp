@@ -4,6 +4,7 @@
 [![Code Climate][cq-image]][cq-url]
 [![Dependencies][deps-image]][deps-url]
 
+> Runs Express applications as modules
 
 `PolyApp` is a simple package which aims to solve two needs:
 
@@ -29,15 +30,15 @@
 `PolyApp` is available on `npm`. To be able to create a container with `PolyApp` and some `modules` you need to install the `PolyApp` dependency first:
 
     npm install --save polyapp
-            
+
 ## <a name="how-it-works"></a> How it works
 
-There are two elements: **PolyApp** (this package) and **PolyApp modules** (packages which simply exposes a [Express router](http://expressjs.com/en/4x/api.html#router)).        
+There are two elements: **PolyApp** (this package) and **PolyApp modules** (packages which simply exposes a [Express router](http://expressjs.com/en/4x/api.html#router)).
 
 ## <a name="usage"></a> Usage
 
 Here you have a container example. You simply initialize `PolyApp` and include as many modules as you want. There is a basic module example following this piece of code.
-   
+
 ```js
 var PolyApp = require('../polyapp');
 var poly = new PolyApp();
@@ -62,7 +63,7 @@ module.exports = function Module(server, options) {
   this.router = express.Router();
 
   this.router.get('/test', function(req, res, next) {
-    
+
     res.status(OK_STATUS_CODE).send('It works!');
   });
 };

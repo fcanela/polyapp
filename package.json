@@ -1,7 +1,7 @@
 {
   "name": "polyapp",
   "version": "0.1.0",
-  "description": "Handle Express server logic to run multiple applications",
+  "description": "Runs Express applications as modules",
   "main": "polyapp.js",
   "scripts": {
     "start": "node_modules/.bin/mocha --watch test/*",
