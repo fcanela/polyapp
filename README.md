@@ -134,5 +134,5 @@ My excuse: It solves a problem that I have.
 [cq-url]: https://codeclimate.com/github/fcanela/polyapp
 [deps-image]: https://david-dm.org/fcanela/polyapp.svg
 [deps-url]: https://david-dm.org/fcanela/polyapp
-[dev-deps-image]: https://david-dm.org/alanshaw/david-www/dev-status.svg
-[dev-deps-url]: https://david-dm.org/alanshaw/david-www#info=devDependencies
+[dev-deps-image]: https://david-dm.org/fcanela/polyapp/dev-status.svg
+[dev-deps-url]: https://david-dm.org/fcanela/polyapp#info=devDependencies

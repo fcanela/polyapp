@@ -1,5 +1,7 @@
 {
   "name": "polyapp",
+  "author": "Francisco Canela <fcanela.dev+npm@gmail.com> (http://www.fcanela.com)",
+  "license": "MIT",
   "version": "0.1.0",
   "description": "Runs Express applications as modules",
   "main": "polyapp.js",
@@ -15,8 +17,6 @@
     "modules",
     "microservices"
   ],
-  "author": "Francisco Canela <fcanela.dev+npm@gmail.com> (http://www.fcanela.com)",
-  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.14.2",
     "express": "^4.13.4"
