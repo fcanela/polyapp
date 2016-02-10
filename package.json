@@ -3,7 +3,7 @@
   "author": "Francisco Canela <fcanela.dev+npm@gmail.com> (http://www.fcanela.com)",
   "license": "MIT",
   "version": "0.1.0",
-  "description": "Runs Express applications as modules",
+  "description": "Express applications as modules",
   "main": "lib/polyapp.js",
   "scripts": {
     "start": "node_modules/.bin/mocha --watch test/*",
