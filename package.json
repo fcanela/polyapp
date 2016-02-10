@@ -4,7 +4,7 @@
   "license": "MIT",
   "version": "0.1.0",
   "description": "Runs Express applications as modules",
-  "main": "polyapp.js",
+  "main": "lib/polyapp.js",
   "scripts": {
     "start": "node_modules/.bin/mocha --watch test/*",
     "test": "node_modules/.bin/mocha test/*",
