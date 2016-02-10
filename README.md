@@ -1,16 +1,20 @@
 # PolyApp
 
+[![npm version][npmsemver-image]][npmsemver-url]
 [![Build Status][ci-image]][ci-url]
 [![Code Climate][cq-image]][cq-url]
 [![Dependencies][deps-image]][deps-url]
 [![Dev Dependencies][dev-deps-image]][dev-deps-url]
+[![License][license-image]][license-url]
 
-> Runs Express applications as modules
+> Express applications as modules
 
 `PolyApp` is a simple package which aims to solve two needs:
 
 * Create [`Express`](http://expressjs.com/) applications without the hurdle of reimplementing the server logic
 * Easy deploying of containers which have one or more [`Express`](http://expressjs.com/) modules
+
+PolyApp helps to save time and money. Deploy several modules in the same PolyApp meanwhile you are short of resources. When your demand and resources grow, split easily the modules into more PolyApps so they can handle the traffic. 
 
 ## Table of Contents
 
@@ -43,11 +47,11 @@ There are two elements:
 * **PolyApp** (this package) which runs a instance of Express framework.
 * **PolyApp modules** which simply exposes a [Express router](http://expressjs.com/en/4x/api.html#router).
 
-You can create a container to deploy as many (or less) modules as you want simply following the next steps:
+You can create a container to deploy as many modules as you want simply following the next steps:
 
 1. Install PolyApp (using npm) and your modules (with npm, git submodules, placing them on a folder or whatever you prefer)
 2. Require PolyApp and your modules
-3. Create a instance of PolyApp
+3. Create an instance of PolyApp
 4. Include your modules in PolyApp
 5. Start the PolyApp server
 
@@ -146,6 +150,15 @@ Worse, this can be considered a framework on top of another framework. Please, a
 
 My excuse: It solves a problem that I have.
 
+### Why this in a world with Docker?
+
+Because deploying a Docker image of each application can take a lot of memory.
+
+I am fan of Docker and microservices architectures. You can have a Docker container with all the services with PolyApp meanwhile you are low of resources or traffic. Later, when you can create images with ease images of PolyApp running only one service each.
+
+
+[npmsemver-image]: https://img.shields.io/npm/v/polyapp.svg
+[npmsemver-url]: https://www.npmjs.com/package/polyapp
 [ci-image]: https://travis-ci.org/fcanela/polyapp.svg?branch=master
 [ci-url]: https://travis-ci.org/fcanela/polyapp
 [cq-image]: https://codeclimate.com/github/fcanela/polyapp/badges/gpa.svg
@@ -154,3 +167,5 @@ My excuse: It solves a problem that I have.
 [deps-url]: https://david-dm.org/fcanela/polyapp
 [dev-deps-image]: https://david-dm.org/fcanela/polyapp/dev-status.svg
 [dev-deps-url]: https://david-dm.org/fcanela/polyapp#info=devDependencies
+[license-image]: https://img.shields.io/npm/l/polyapp.svg
+[license-url]: LICENSE
