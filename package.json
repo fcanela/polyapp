@@ -8,7 +8,7 @@
   "scripts": {
     "start": "node_modules/.bin/mocha --watch test/*",
     "test": "node_modules/.bin/mocha test/*",
-    "lint": "node_modules/.bin/eslint -c .eslint lib/*",
+    "lint": "node_modules/.bin/eslint -c .eslintrc lib/*",
     "health": "npm run test ; npm run lint",
     "docs": "node_modules/.bin/jsdoc2md --src lib/* > doc/api.md"
   },
@@ -22,7 +22,7 @@
     "express": "^4.13.4"
   },
   "devDependencies": {
-    "eslint": "^1.10.3",
+    "eslint": "^2.1.0",
     "jsdoc-to-markdown": "^1.3.3",
     "mocha": "^2.4.5",
     "should": "^8.2.1",
